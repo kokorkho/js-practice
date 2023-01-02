@@ -212,7 +212,7 @@ function t11() {
   result = "";
   for (let i = 0; i < divs11.length; i++) {
     result += divs11[i].innerHTML + "_";
-  }zsxq
+  }
   out11.innerHTML = result;
 }
 
