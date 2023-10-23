@@ -1,43 +1,82 @@
 // Task 1.
 // Создайте две переменные a = 7 и b = 9. Выведите в консоль результа умножения a на b.
+let a = 7;
+let b = 9;
+
+console.log(a * b);
 
 // Task 2.
 // Создайте две переменные c = 7 и d = 9. Выведите на страницу в .out-2 результат деления c на d.
+let c = 7;
+let d = 9;
+let out2;
+
+out2 = document.querySelector('.out-2');
+
+out2.textContent = c / d;
 
 // document.querySelector('.out-2').textContent = 
 
 // Task 3.
 // Создайте две переменные e = 3 и f = 5. Выведите на страницу  в .out-3 результат сложения e + f.
+let e = 3;
+let f = 5;
+
+let out3 = document.querySelector('.out-3');
+
+out3.textContent = e + f;
+
+// console.log(out3);
 
 // document.querySelector('.out-3').textContent = 
 
 // Task 4.
 // Создайте две переменные e1 = '3' и f1 = 5. Выведите на страницу  в .out-4 результат сложения e1 + f1. Объясните разницу.
+let e1 ='3';
+let f1 = 5;
+
+let out4 = document.querySelector('.out-4');
+out4.textContent = e1 + f1;
+
+
 
 // document.querySelector('.out-4').textContent = 
 
 // Task 5.
 // Создайте две переменные e2 = 3 и f2 = 0. Выведите на страницу  в .out-5 результат деления e2 на f2.
+let e2 = 3;
+let f2 = 0;
 
-// document.querySelector('.out-5').textContent = 
+document.querySelector('.out-5').textContent = e2 / f2;
 
 // Task 6.
 // Создайте две переменные e3 = 3 и f3 = 'Hello'. Выведите на страницу  в .out-6 результат сложения двух переменных.
+let e3 = 3;
+let f3 = 'Hello';
 
-// document.querySelector('.out-6').textContent = 
+document.querySelector('.out-6').textContent = e3 + f3;
 
 // Task 7.
 // Создайте две переменные e4 = 3 и f4 = 'Hello'. Выведите на страницу  в .out-7 результат умножения двух переменных.
+let e4 = 3;
+let f4 = 'Hello';
 
-// document.querySelector('.out-7').textContent = 
+document.querySelector('.out-7').textContent = e4 * f4;
 
 // Task 8.
 // По нажатию на кнопку .b-8 выполняется функция, которая выводит в div.out-8 то, что пользователь ввел в input.i-8.
 
 function t8() {
     // value всегда получаем внутри функции
-    // let data = document.querySelector('.i-8').value; // получили значение
-    // тут выводим
+    let data = document.querySelector('.i-8').value; 
+    
+    let div = document.querySelector('.out-8');
+  
+    div.innerHTML = data;
+
+    // получили значение
+    // тут выводим 
+//     console.log(data);
 }
 
 document.querySelector('.b-8').onclick = t8;
@@ -46,7 +85,18 @@ document.querySelector('.b-8').onclick = t8;
 // По нажатию на кнопку .b-9 выполняется функция t9, которая выводит в div.out-9 то, что пользователь ввел в input.i-9. Добавьте очистку input после нажатия кнопки.
 
 function t9() {
+    
+    let i9 = document.querySelector('.i-9');
 
+    let div9 = document.querySelector('.out-9');
+
+    div9.innerHTML = i9.value;
+    
+    // console.log(i9.value);
+    
+    i9.value = '';
+    
+    // console.log(i9.value);
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -55,6 +105,12 @@ document.querySelector('.b-9').onclick = t9;
 // По нажатию на кнопку .b-10 выполняется функция t10, которая выводит в div.out-10 то, что пользователь ввел в input.i-10 умноженное на 20.
 
 function t10() {
+
+let i10 = document.querySelector('.i-10').value;
+
+let div10 = document.querySelector('.out-10');
+
+div10.innerHTML = i10 * 20;
 
 }
 
@@ -65,6 +121,13 @@ document.querySelector('.b-10').onclick = t10;
 
 function t11() {
 
+let i11 = document.querySelector('.i-11');
+
+let div11 = document.querySelector('.out-11');
+
+div11.innerHTML = +i11.value + 55; 
+
+
 }
 
 document.querySelector('.b-11').onclick = t11;
@@ -74,6 +137,13 @@ document.querySelector('.b-11').onclick = t11;
 
 function t12() {
 
+let i12 = document.querySelector('.i-12-1');
+let i22 = document.querySelector('.i-12-2');
+let div12 = document.querySelector('.out-12');
+
+div12.innerHTML = 'Hello ' + i12.value + ' ' + i22.value; 
+
+// console.log(div12);
 }
 
 document.querySelector('.b-12').onclick = t12;
@@ -82,6 +152,11 @@ document.querySelector('.b-12').onclick = t12;
 // При нажатии кнопки .b-13 выполняется t13. Функция получает из input.i-13-1 и .i-13-2 числа в переменные a, b. После чего в .out-13 выводит их сумму. Преобразовывайте a, b в числа!!!!
 
 function t13() {
+let i13 = document.querySelector('.i-13-1');
+let i23 = document.querySelector('.i-13-2');
+let div13 = document.querySelector('.out-13');
+
+div13.innerHTML = +i13.value + +i23.value;
 
 }
 
@@ -91,6 +166,11 @@ document.querySelector('.b-13').onclick = t13;
 // По нажатию кнопки .b-14 выполняется функция t14. Она заменяет значение value в input.i-14 на строку 'Go';
 
 function t14() {
+   let i14 = document.querySelector('.i-14');
+
+   i14.value = 'Go';
+    
+// console.log(i14);
 
 }
 
@@ -100,7 +180,9 @@ document.querySelector('.b-14').onclick = t14;
 //  По нажатию кнопки .b-15 выполняется функция t15. Она присваивает .i-15 свойство style.border = "4px solid red";
 
 function t15() {
+    let i15 = document.querySelector('.i-15');
 
+    i15.style.border = "4px solid red";
 }
 
 document.querySelector('.b-15').onclick = t15;
@@ -109,6 +191,13 @@ document.querySelector('.b-15').onclick = t15;
 //По нажатию на кнопку .b-16 выполняется функция t16. Функция получает из .i-16-1 и i-16-2 числа. Выведите в .out-16 сумму данных чисел по нажатию кнопки b-16. Не переводите полученное из input в число!!!!
 
 function t16() {
+    let i16 = document.querySelector('.i-16-1').value;
+    let i26 = document.querySelector('.i-16-2').value;
+    let div16 = document.querySelector('.out-16');
+
+    div16.innerHTML = i16 + i26;
+
+    console.log(div16);
 
 }
 
@@ -130,6 +219,13 @@ document.querySelector('.b-17').onclick = t17;
 //  По нажатию на кнопку .b-18 выполняется функция t18. Функция получает из .i-18 число в переменную a. Выводит в out-18 результат операции parseFloat(a). Попробуйте ввести значения 5, 33.02, 33.9a, -20.01
 
 function t18() {
+let i18 = document.querySelector('.i-18').value;
+let out18 = document.querySelector('.out-18');
+
+
+console.log(i18);
+console.log(parseFloat(i18));
+out18.innerHTML = parseFloat(i18);
 
 }
 
@@ -139,6 +235,12 @@ document.querySelector('.b-18').onclick = t18;
 // По нажатию кнопки .b-19 функция t19 дожна в out-19 вывести сумму двух отрицательных чисел из input .i-19-1 и .i-19-2. 
 
 function t19() {
+    let i19 = document.querySelector('.i-19-1').value;
+    let i29 = document.querySelector('.i-19-2').value;
+    let div19 = document.querySelector('.out-19');
+
+    div19.innerHTML = +i19 + +i29;
+    
 
 }
 
@@ -146,12 +248,16 @@ document.querySelector('.b-19').onclick = t19;
 
 // Task 20
 // При нажатии на кнопку .b-20 в out-20 выводится число - сколько раз была нажата кнопка .b-20;
-
+let div20 = document.querySelector('.out-20');
 let count = 0;
 
 function t20() {
     count = count + 1; // можно сократить count++
     // тут допишите вывод в out-20
+    div20.innerHTML = count;
+
+    // console.log(div20);
+
 }
 
 document.querySelector('.b-20').onclick = t20;
