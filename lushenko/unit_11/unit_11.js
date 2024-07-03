@@ -256,7 +256,6 @@ let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 function f15() {
   let i15 = +document.querySelector(".i-15").value;
 
-  let srt = [];
   for (let i = 0; i < d15.length; i++) {
     if (d15.indexOf(i15) == -1) {
       d15.push(i15);
